@@ -28,14 +28,14 @@ const App: React.FC = () => {
     const init = async () => {
       if (Capacitor.getPlatform() === 'web') {
         FirebaseAnalytics.initializeFirebase({
-          apiKey: "AIzaSyDTM6WF5rt31iFFKZByi0AWc9Y7VJel9Dc",
-          authDomain: "capacitor-c1731.firebaseapp.com",
-          databaseURL: "https://capacitor-c1731.firebaseio.com",
-          projectId: "capacitor-c1731",
-          storageBucket: "capacitor-c1731.appspot.com",
-          messagingSenderId: "1041364361004",
-          appId: "1:1041364361004:web:0b2e129cb492aba4e95689",
-          measurementId: "G-JN8DWH71XQ"
+          apiKey: "AIzaSyAQ5DcUx1dYn0h0xydkU7NGmxeKF7J0T0E",
+          authDomain: "capacitor-firebase-analy-7b5d6.firebaseapp.com",
+          databaseURL: "https://capacitor-firebase-analy-7b5d6.firebaseapp.com",
+          projectId: "capacitor-firebase-analy-7b5d6",
+          storageBucket: "capacitor-firebase-analy-7b5d6.appspot.com",
+          messagingSenderId: "589102436518",
+          appId: "1:589102436518:web:97a71884f5f4c354eca467",
+          measurementId: "G-KTLD1E5YDR"
         });
       }
     }
