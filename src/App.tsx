@@ -43,6 +43,18 @@ const App: React.FC = () => {
     init();
   }, []);
 
+  const enable = () => {
+    FirebaseAnalytics.setCollectionEnabled({
+      enabled: true,
+    });
+  }
+
+  const disable = () => {
+    FirebaseAnalytics.setCollectionEnabled({
+      enabled: false,
+    });
+  }
+
   const setUserId = () => {
     FirebaseAnalytics.setUserId({
       userId: 'john_doe_123',
@@ -64,7 +76,7 @@ const App: React.FC = () => {
   };
 
   const setScreenName = async () => {
-    await FirebaseAnalytics.setScreenName({ screenName: 'test' });
+    await FirebaseAnalytics.setScreenName({ screenName: 'test', nameOverride: 'testScreen' });
   };
 
   const logEvent = async () => {
@@ -72,8 +84,7 @@ const App: React.FC = () => {
       name: "select_content",
       params: {
         content_type: "image",
-        content_id: "P12453",
-        items: [{ name: "Kittens" }],
+        content_id: "P12453"
       },
     });
   };
@@ -81,6 +92,8 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <>
+        <button onClick={enable} style={button}>Enable Analytics</button>
+        <button onClick={disable} style={button}>Disable Analytics</button>
         <button onClick={setUserId} style={button}>Set User ID</button>
         <button onClick={setUserProperty} style={button}>Set User Property</button>
         <button onClick={getAppInstanceId} style={button}>Get App Instance Id</button>
