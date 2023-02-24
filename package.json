@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@capacitor-community/firebase-analytics": "file:../firebase-analytics",
-    "@capacitor/android": "^2.2.0",
-    "@capacitor/core": "2.2.0",
-    "@capacitor/ios": "^2.2.0",
+    "@capacitor-community/firebase-analytics": "^4.0.0",
+    "@capacitor/android": "^4.0.0",
+    "@capacitor/core": "^4.0.0",
+    "@capacitor/ios": "^4.0.0",
     "@ionic/react": "^5.2.2",
     "@ionic/react-router": "^5.2.2",
     "@testing-library/jest-dom": "^5.10.1",
@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "2.2.0"
+    "@capacitor/cli": "^4.0.0"
   },
   "description": "An Ionic project"
 }
