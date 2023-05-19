@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "@capacitor-community/firebase-analytics": "^5.0.0",
-    "@capacitor/android": "^4.0.0",
-    "@capacitor/core": "^4.0.0",
-    "@capacitor/ios": "^4.0.0",
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/ios": "^5.0.0",
     "@ionic/react": "^5.2.2",
     "@ionic/react-router": "^5.2.2",
     "@testing-library/jest-dom": "^5.10.1",
@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "^4.0.0"
+    "@capacitor/cli": "^5.0.0"
   },
   "description": "An Ionic project"
 }
